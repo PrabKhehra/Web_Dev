@@ -1,0 +1,31 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <h1> Divisible By Three</h1>
+    <script>
+    var text = " ";
+    var i = Number(prompt("Enter a Number : "));
+    var count = 0
+
+    while (i != 1) {
+        count++;
+
+
+        document.write(i + text + "<br>")
+        if (i % 3 == 0) {
+            i = i / 3;
+
+        } else if (i % 3 == 1) {
+            i--;
+        } else {
+            i++;
+        }
+    }
+    document.write("Iterations taken:  " + count);
+    </script>
+</body>
+
+</html>

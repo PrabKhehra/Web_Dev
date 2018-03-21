@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p id="iterator"></p>
+    <script>
+    var text = "";
+    var i;
+
+    for (i = 1; i <= 100; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+            text +=  "   FizzBuzz" + "<br>";
+        } else {
+            if (i % 3 == 0) {
+                text +=  "   Fizz" + "<br>";
+            } else {
+                if (i % 5 == 0) {
+                    text +=  "   Buzz" + "<br>";
+                } else {
+                    text += i + "<br>";
+                }
+            }
+        }
+    }
+    
+
+
+    document.getElementById("iterator").innerHTML = text;
+    </script>
+</body>
+
+</html>

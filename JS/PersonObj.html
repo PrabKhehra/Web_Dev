@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<SCRIPT>
+function display() { var x = document.details.fname.value; var y = document.details.age.value; var z = document.details.job.value;
+    document.getElementById("display").innerHTML = "FIRST NAME:" + x + " " + "AGE:" + y + " " + "JOB:" + z; };
+</SCRIPT>
+
+<body>
+    <form name=details>
+        <table>
+            <tr>
+                <td>ENTER NAME:
+                    <input type=text name=fname>
+                </td>
+            </tr>
+            <tr>
+                <td>ENTER AGE:
+                    <input type=text name=age>
+                </td>
+            </tr>
+            <tr>
+                <td>ENTER JOB :
+                    <input type=text name=job>
+                </td>
+            </tr>
+        </table>
+        <input type="button" value="Create" onclick="display();">
+    </form>
+    <h1>Display Here</h1>
+    <p id="display"></p>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+    <script>
+    function square(number) {
+        return (Math.pow(number, 2));
+
+    }
+
+    function sum(n1, n2, n3) {
+        return (n1 + n2 + n3);
+    }
+
+    document.write("Input squared =  ", square(3), "<br>", "<br>");
+
+    document.write("Sum of input =  ", sum(1, 2, 3), "<br>", "<br>");
+
+    var Person = {
+        name: "Prab",
+        age: 25,
+        job: "Consultant",
+    };
+
+
+    document.write("Consultant:    ", Person.name + " <br> Age:" + Person.age + " <br> Job:" + Person.job, "<br>", "<br>");
+    Person.age = Person.age + 1;
+
+    function ageUp() {
+        document.write("Consultant:    ", Person.name + " <br> Age:" + Person.age + " <br> Job:" + Person.job, "<br>", "<br>");
+        Person.age = Person.age + 1;
+        document.write("New details", "<br>Consultant:    ", Person.name + " <br> Age:" + Person.age + " <br> Job:" + Person.job, "<br>");
+    }
+
+    function checkAge() {
+        if (Person.age >= 20 && Person.age < 40) {
+            alert("True");
+        
+        } else {
+            alert("False");
+        }
+    }
+    </script>
+    <input type="button" onclick="window.alert(square(5))" value="Square of 5" />
+    <input type="button" onclick="ageUp()" value="Age up by 1" />
+    <input type="button" onclick="checkAge()" value="Check between 20 and 40" />
+</body>
+
+</html>

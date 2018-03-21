@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <button onclick="addPerson()">Add</button>
+    <button onclick="deleteElement()">Delete last person</button>
+
+
+
+    <p id="Class"></p>
+    <script>
+    var classmates = ["Tom", "Peter", "Prab"];
+    document.getElementById("Class").innerHTML = classmates;
+
+    function addPerson() {
+        classmates.push("Shaun");
+        document.getElementById("Class").innerHTML = classmates;
+    };
+
+    function deleteElement() {
+        classmates.splice(-1, 1);
+        document.getElementById("Class").innerHTML = classmates;
+    };
+    </script>
+</body>
+
+</html>
